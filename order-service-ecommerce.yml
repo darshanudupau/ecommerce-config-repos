@@ -1,0 +1,28 @@
+server:
+  port: 8084
+
+spring:
+
+  application:
+    name: order-service-ecommerce
+
+  datasource:
+
+    url: jdbc:mysql://mysql:3306/orderdb
+
+    username: root
+
+    password: root
+
+  kafka:
+
+    consumer:
+      group-id: order-group
+
+eureka:
+
+  client:
+
+    service-url:
+
+      defaultZone: http://eureka-server:8761/eureka/
