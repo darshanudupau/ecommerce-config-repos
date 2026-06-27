@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+
+  application:
+    name: api-gateway-service-ecommerce
+
+eureka:
+
+  client:
+
+    service-url:
+
+      defaultZone: http://eureka-server:8761/eureka/
