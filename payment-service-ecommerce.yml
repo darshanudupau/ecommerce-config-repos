@@ -1,0 +1,28 @@
+server:
+  port: 8085
+
+spring:
+
+  application:
+    name: payment-service-ecommerce
+
+  datasource:
+
+    url: jdbc:mysql://mysql:3306/paymentdb
+
+    username: root
+
+    password: root
+
+  kafka:
+
+    consumer:
+      group-id: payment-group
+
+eureka:
+
+  client:
+
+    service-url:
+
+      defaultZone: http://eureka-server:8761/eureka/
