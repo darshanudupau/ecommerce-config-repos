@@ -1,0 +1,28 @@
+server:
+  port: 8087
+
+spring:
+
+  application:
+    name: notification-service-ecommerce
+
+  datasource:
+
+    url: jdbc:mysql://mysql:3306/notificationdb
+
+    username: root
+
+    password: root
+
+  kafka:
+
+    consumer:
+      group-id: notification-group
+
+eureka:
+
+  client:
+
+    service-url:
+
+      defaultZone: http://eureka-server:8761/eureka/
