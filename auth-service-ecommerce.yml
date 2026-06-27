@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+
+  application:
+    name: auth-service-ecommerce
+
+  datasource:
+
+    url: jdbc:mysql://mysql:3306/authdb
+
+    username: root
+
+    password: root
+
+eureka:
+
+  client:
+
+    service-url:
+
+      defaultZone: http://eureka-server:8761/eureka/
