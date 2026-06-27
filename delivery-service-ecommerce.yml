@@ -1,0 +1,28 @@
+server:
+  port: 8086
+
+spring:
+
+  application:
+    name: delivery-service-ecommerce
+
+  datasource:
+
+    url: jdbc:mysql://mysql:3306/deliverydb
+
+    username: root
+
+    password: root
+
+  kafka:
+
+    consumer:
+      group-id: delivery-group
+
+eureka:
+
+  client:
+
+    service-url:
+
+      defaultZone: http://eureka-server:8761/eureka/
