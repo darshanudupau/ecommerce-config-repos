@@ -10,9 +10,9 @@ spring:
 
     url: jdbc:mysql://mysql:3306/productdb
 
-    username: root
+    username: product_user
 
-    password: root
+    password: product_pass
 
 eureka:
 
